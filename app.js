@@ -17,21 +17,21 @@ const fromEuroToDollar = (euro) => {
 
 const fromDollarToYen = (dollar) => {
     let result = 0;
-    result = ((dollar/1.2)*oneEuroIs["JPY"]).toFixed(2);
+    result = ((dollar/1.2)*oneEuroIs["JPY"]);
     return result
 }
 
 const fromYenToPound = (yen) => {
     let result = 0;
-    result = ((yen/127.9)*oneEuroIs["GBP"]).toFixed(2);
+    result = ((yen/127.9)*oneEuroIs["GBP"]);
     return result
 }
 
 // solo un registro en consola para nosotros.
 console.log(sum(7,3))
 console.log(fromEuroToDollar(8))
-console.log(fromDollarToYen(100))
-console.log(fromYenToPound(100))
+console.log(fromDollarToYen(3.5))
+console.log(fromYenToPound(3.5))
 
 // exporta la función para usarla en otros archivos 
 // (similar a la palabra clave `export` cuando se usa webpack)
